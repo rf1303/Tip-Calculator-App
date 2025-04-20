@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="assets/js/main.js"></script> 
+    <title>Frontend Mentor | Tip calculator app</title>
+    
+</head>
+<body>
+    <header class="layout__head"> 
+       <img class="head__images" src="./assets/images/logo.svg" alt="splitter tip amount">  
+    </header>
+    <main class="layout__select"> 
+
+        <section class="layout__wrapper"> 
+             <section class="wrapper__mount-total"> 
+                <h1 class="wrapper__title">Bill</h1>
+                <div class="wrapper__number"> 
+                    <img class="number__dollar" src="./assets/images/icon-dollar.svg" alt=""> 
+                    <input type="number" name="numberCount"  class="number__count" placeholder="0" data-valid="tipCount" required>
+                </div>    
+             </section>
+            <section class="wrapper__content"> 
+                <h2 class="list__title">Select Tip %</h2>
+                <ul class="wrapper__list">  
+                    <li class="list__tip"> 
+                        <button class="list__button" type="button" data-tip="5">5%</button>
+                    </li>
+
+                    <li class="list__tip"> 
+                        <button class="list__button" type="button" data-tip="10">10%</button>
+                    </li>
+
+                    <li class="list__tip"> 
+                        <button class="list__button" type="button" data-tip="15">15%</button>
+                    </li>
+
+                    <li class="list__tip"> 
+                        <button class="list__button" type="button" data-tip="25">25%</button>
+                    </li>
+
+                    <li class="list__tip"> 
+                        <button class="list__button" type="button" data-tip="50">50%</button>
+                    </li>
+
+                    <li class="list__tip"> 
+                        <!-- <label for="input" class="list__button">Custon</label> -->
+                        <input class="list__button list__input" type="number" name="listButton" placeholder="Custon" data-valid="tipAmount" required>
+
+                       <!--  <button class="list__button" type="button">Custom</button> -->
+                    </li>
+                </ul>
+            </section>
+            <section class="layout__people"> 
+                <section class="people__header"> 
+                    <h3 class="people__title">Number of People</h3> 
+                    <span class="people__title people__title--error display-none">Can´t be zero</span>
+                </section>
+                <div class="people__number">     
+                    <img class="people__icon" src="./assets/images/icon-person.svg" alt=""> 
+                    <input type="number" name="numberPerson" value="" class="number__person" placeholder="0" required data-valid="tipPerson">
+                </div>
+            </section>
+        </section>
+
+        <section class="layout__amount"> 
+            <section class="amount__tip"> 
+                <div class="tip__header"> 
+                    <h3 class="tip__title">Tip Amount</h3>
+                    <p class="tip__subtitle">/ person</p>
+                </div>
+                <span class="tip__number">$0</span>
+            </section>
+
+            <section class="amount__total"> 
+                <div class="total__header"> 
+                    <h3 class="total__title">Total</h3>
+                    <p class="total__subtitle">/ person</p>
+                </div>
+                <span class="total__number">$0</span>
+            </section>
+            <div class="amount__button"> 
+                <button type="reset" class="button__reset">reset</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
