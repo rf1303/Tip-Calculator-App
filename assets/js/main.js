@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function  () {
 
-    /* let dataTip = 0; */
     const numberCount = document.querySelector('.number__count'); 
     const peopleTitle = document.querySelector('.people__title--error');
     const listInput = document.querySelector('.list__input');
@@ -116,11 +115,12 @@ document.addEventListener('DOMContentLoaded', function  () {
             
             tipNumber.textContent = `$${Math.round(totalTipPerson)}` 
             totalNumber.textContent = `$${Math.round(totalPerson)}`; 
-            console.log("total tip: ", totalTip);
-            console.log("total Print count: ", validNumbers.tipCount);
-            console.log("total Print amount: ", totalAmount);
-            console.log("total Print person: ", totalPerson);
+
+            buttonReset.classList.remove('button__reset--empty');
+
             }else {
+                tipNumber.textContent = "$0"; 
+                totalNumber.textContent = "$0"; 
                 console.log('falta un dato');
             };
     };
@@ -138,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function  () {
         listInput.classList.remove('number__person--error');
         peopleNumber.classList.remove('number__person--error');
         peopleTitle.classList.add('display-none');
+
+        buttonReset.classList.add('button__reset--empty');
         console.log('paso reset');
     }
 
