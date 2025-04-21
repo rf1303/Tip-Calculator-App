@@ -157,6 +157,7 @@ body {
 }
 
 .number__count {
+  cursor: pointer;
   max-width: 14.7rem;
   color: #00474b;
   font-size: 2.4rem;
@@ -165,6 +166,7 @@ body {
   transition: all 0.3s ease;
 }
 .number__count:focus {
+  cursor: pointer;
   outline: none;
   background-color: #9fe8df;
   border: 1px solid #0d6b6d;
@@ -198,7 +200,7 @@ body {
   font-size: 2.4rem;
   padding: 0.8rem 1.6rem;
   border-radius: 0.4rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .list__button:hover, .list__button focus {
   cursor: pointer;
@@ -208,6 +210,7 @@ body {
 
 .list__input {
   height: 4.8rem;
+  cursor: pointer;
   max-width: 14.7rem;
   color: #00474b;
   font-size: 2.4rem;
@@ -218,6 +221,7 @@ body {
   border: 2px solid transparent;
 }
 .list__input:focus {
+  cursor: pointer;
   outline: none;
   background-color: #9fe8df;
   border: 1px solid #0d6b6d;
@@ -256,6 +260,7 @@ body {
   border: 2px solid transparent;
 }
 .people__number:hover, .people__number focus {
+  cursor: pointer;
   border: 2px solid #26c2ae;
   border-radius: 0.4rem;
 }
@@ -265,6 +270,7 @@ body {
 }
 
 .number__person {
+  cursor: pointer;
   max-width: 14.7rem;
   color: #00474b;
   font-size: 2.4rem;
@@ -273,6 +279,7 @@ body {
   transition: all 0.3s ease;
 }
 .number__person:focus {
+  cursor: pointer;
   outline: none;
   background-color: #9fe8df;
   border: 1px solid #0d6b6d;
@@ -333,8 +340,16 @@ body {
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 .button__reset:hover {
+  cursor: pointer;
   background-color: #9fe8df;
   box-shadow: 1px 1px 5px 6px rgba(0, 39, 31, 0.7), 0.7px 0.7px 2px 5px rgba(0, 39, 31, 0.25) inset;
+  transition: all 0.5s ease;
+}
+.button__reset:focus {
+  cursor: pointer;
+  background-color: #9fe8df;
+  box-shadow: 1px 1px 5px 6px rgba(0, 39, 31, 0.7), 0.7px 0.7px 2px 5px rgba(0, 39, 31, 0.25) inset;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 650px) {
@@ -342,6 +357,7 @@ body {
     width: min(61.8rem, 100%);
     border-radius: 2.5rem;
     padding: 4.8rem 8rem;
+    box-shadow: 1px 1px 5px 6px rgba(0, 0, 0, 0.3), 0.7px 0.7px 2px 5px rgba(0, 0, 0, 0.2) inset;
   }
   .wrapper__list {
     /* height: $space-600; */

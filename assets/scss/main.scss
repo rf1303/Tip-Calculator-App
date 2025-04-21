@@ -97,7 +97,7 @@ body {
   font-size: 2.4rem;
   padding: .8rem 1.6rem;
   border-radius: .4rem;
-  transition: all .3s ease-in-out;
+  transition: all .4s ease-in-out;
   &:hover,focus {
     cursor: pointer;
     background-color: $green-400-color;
@@ -143,6 +143,7 @@ body {
   padding: .8rem 1.6rem;
   border: 2px solid transparent;
   &:hover, focus {
+    cursor: pointer;
     border: 2px solid $green-400-color;
     border-radius: $space-50;
   }
@@ -209,8 +210,16 @@ body {
   border-radius: .5rem;
   text-shadow: 0px 2px 3px rgba(0,0,0, 0.25);
   &:hover {
+    cursor: pointer;
     background-color: $green-200-color;
     box-shadow: 1px 1px 5px 6px rgba(0, 39, 31, .7), .7px .7px 2px 5px rgba(0,39,31, .25) inset;
+    transition: all .5s ease;
+  }
+  &:focus {
+    cursor: pointer;
+    background-color: $green-200-color;
+    box-shadow: 1px 1px 5px 6px rgba(0, 39, 31, .7), .7px .7px 2px 5px rgba(0,39,31, .25) inset;
+    transition: all .5s ease;
   }
 }
 
@@ -219,7 +228,7 @@ body {
     width: min(61.8rem, 100%);
     border-radius: 2.5rem;
     padding: $space-600 $space-1000;
-
+    box-shadow: 1px 1px 5px 6px rgba(0, 0,0, .3), .7px .7px 2px 5px rgba(0,0,0, .2) inset;
   }    
 .wrapper__list {
   /* height: $space-600; */
